@@ -13,7 +13,7 @@ export default class App extends Component {
           <a href="/puppies" className="nav">Puppies</a>
           <a href="/sharks" className="nav">Sharks</a>
         </nav>
-        <h1>Puppies or Sharks</h1>
+        <h1>Puppies or Sharks?</h1>
       </main>
     );
   }
