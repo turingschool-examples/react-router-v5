@@ -1,5 +1,5 @@
 import React from 'react';
-import './imageDisplay.css';
+import './image-display.css';
 
 const Creatures = ({ data, name}) => {
   const creatureImages = data.map(creature => {
