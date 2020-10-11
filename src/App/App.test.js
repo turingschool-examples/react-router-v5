@@ -1,20 +1,21 @@
 import React from 'react';
 import App from './App';
-import { render, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import '@testing-library/jest-dom';
 
 describe('App', () => {
   describe('Unit Tests', () => {
     it('Should render the heading', () => {
-//      const { getByRole } = render(<App />);
-//      const heading = getByRole('heading', { name: 'Puppies or Sharks?'})
+//      render(<App />);
+//      const heading = screen.getByRole('heading', { name: 'Puppies or Sharks?'})
 //    
 //      expect(heading).toBeInTheDocument();
     });
 
     it('Should render a nav', () =>{
-//      const { getByRole } = render(<App /> );
-//      const navigation = getByRole('navigation');
+//      render(<App /> );
+//      const navigation = screen.getByRole('navigation');
 //
 //      expect(navigation).toBeInTheDocument();
     
@@ -24,9 +25,9 @@ describe('App', () => {
 
   describe('Integration Tests', () => {
     it('Should render 9 puppies on click', () => {
-//      const { getByRole, getAllByRole } = render(<App />);
-//      const puppiesLink = getByRole('link', { name: 'Puppies'});
-//      const welcomeMessage = getByRole('heading', {name: 'Welcome! Click on the links above to see a variety of creatures'});
+//      render(<App />);
+//      const puppiesLink = screen.getByRole('link', { name: 'Puppies'});
+//      const welcomeMessage = screen.getByRole('heading', {name: 'Welcome! Click on the links above to see a variety of creatures'});
 //      
 //      expect(welcomeMessage).toBeInTheDocument();
 //
@@ -34,16 +35,16 @@ describe('App', () => {
 //
 //      expect(welcomeMessage).not.toBeInTheDocument();
 //
-//      const images = getAllByRole('img');
+//      const images = screen.getAllByRole('img');
 //
 //      expect(images).toHaveLength(9);
     
     });
 
     it('Should render 9 sharks on click', () => {
-//      const { getByRole, getAllByRole } = render(<App />);
-//      const sharksLink = getByRole('link', { name: 'Sharks'});
-//      const welcomeMessage = getByRole('heading', {name: 'Welcome! Click on the links above to see a variety of creatures'});
+//      render(<App />);
+//      const sharksLink = screen.getByRole('link', { name: 'Sharks'});
+//      const welcomeMessage = screen.getByRole('heading', {name: 'Welcome! Click on the links above to see a variety of creatures'});
 //      
 //      expect(welcomeMessage).toBeInTheDocument();
 //
@@ -51,7 +52,7 @@ describe('App', () => {
 //
 //      expect(welcomeMessage).not.toBeInTheDocument();
 //
-//      const images = getAllByRole('img');
+//      const images = screen.getAllByRole('img');
 //
 //      expect(images).toHaveLength(9);
     
